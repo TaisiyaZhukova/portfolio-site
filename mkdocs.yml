@@ -42,6 +42,6 @@ nav:
   - 4 семестр:
       - Итераторы, генераторы, сопрограммы: projects/iterators_generators_coroutines.md
       - "Доклад: паттерн Observer": projects/observer_pattern_report.md
-      - Паттерны проектирования (лаба): projects/design_patterns_lab.md
+      - Паттерны проектирования: projects/design_patterns_lab.md
       - Задание "Одиночка": projects/singleton_pattern.md
       - Основные концепции ООП: projects/oop_concepts_python.md
