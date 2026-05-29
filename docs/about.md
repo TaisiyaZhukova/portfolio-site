@@ -7,3 +7,5 @@
 Университет: РГПУ им. А. И. Герцена
 
 По всем вопросам можно связаться со мной через GitHub: [TaisiyaZhukova](https://github.com/TaisiyaZhukova)
+
+![](images/обо мне.jpg)
