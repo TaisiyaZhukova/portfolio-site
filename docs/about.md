@@ -1,4 +1,4 @@
-# Я Жукова Таисия Ильинична
+## Я Жукова Таисия Ильинична
 
 Студентка 2 курса  
 
@@ -6,8 +6,7 @@
 
 Университет: РГПУ им. А. И. Герцена
 
-
-### По всем вопросам можно связаться со мной через GitHub: [TaisiyaZhukova](https://github.com/TaisiyaZhukova)
+По всем вопросам можно связаться со мной через GitHub: [TaisiyaZhukova](https://github.com/TaisiyaZhukova)
 
 
 ![](images/about.jpg)
