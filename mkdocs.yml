@@ -1,16 +1,18 @@
 site_name: "Портфолио Жуковой Таисии"
 site_author: "Жукова Таисия Ильинична"
-site_description: "Портфолио работ по курсу Программирование, 2 курс, группа 2об_ПОО"
+site_description: "Портфолио работ по программированию"
 
 theme:
   name: material
   language: ru
+
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.suggest
     - search.highlight
+
   palette:
     - scheme: default
       primary: pink
@@ -18,6 +20,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Светлая тема
+
     - scheme: slate
       primary: pink
       accent: deep purple
@@ -34,14 +37,17 @@ markdown_extensions:
 
 nav:
   - Главная: index.md
-  - 3 семестр:
-      - Two Sum: projects/two_sum.md
-      - Вычисление деления: projects/division_calculation.md
-      - Бинарное дерево. Рекурсия: projects/binary_tree_recursion.md
-      - Телеграм-бот для библиотек: projects/telegram_bot_libraries.md
-  - 4 семестр:
-      - Итераторы, генераторы, сопрограммы: projects/iterators_generators_coroutines.md
-      - "Доклад: паттерн Observer": projects/observer_pattern_report.md
-      - Паттерны проектирования: projects/design_patterns_lab.md
-      - Задание "Одиночка": projects/singleton_pattern.md
-      - Основные концепции ООП: projects/oop_concepts_python.md
+  - Обо мне: about.md
+  - Портфолио:
+      - 3 семестр:
+          - Two Sum: projects/two_sum.md
+          - Вычисление деления: projects/division_calculation.md
+          - Бинарное дерево. Рекурсия: projects/binary_tree_recursion.md
+          - Телеграм-бот для библиотек: projects/telegram_bot_libraries.md
+
+      - 4 семестр:
+          - Итераторы, генераторы, сопрограммы: projects/iterators_generators_coroutines.md
+          - "Доклад: паттерн Observer": projects/observer_pattern_report.md
+          - Паттерны проектирования: projects/design_patterns_lab.md
+          - Задание "Одиночка": projects/singleton_pattern.md
+          - Основные концепции ООП: projects/oop_concepts_python.md
