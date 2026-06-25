@@ -5,7 +5,7 @@
 ---
 
 ## 1. Первоначальный промт
-
+``` makkdown
 **Ниже приведён полный текст промта, который был сформулирован с учётом методических требований и типовых недочётов.**
 
 
@@ -140,7 +140,7 @@
 - как необходимо изменить формулировку, чтобы неоднозначность исчезла.
 
 Не переходи к следующему разделу, пока не убедишься, что предыдущий сформулирован однозначно и не требует дополнительных уточнений.
-
+```
 
 ---
 
@@ -148,6 +148,7 @@
 
 Ниже приводится полный текст, полученный от языковой модели при первом запуске.
 
+```markdown
 # 1. Название лабораторной работы
 
 **Исследование особенностей SQLite: динамическая типизация, влияние транзакций на массовую вставку и влияние индексов на скорость поиска**
@@ -233,7 +234,6 @@ cur.executemany(
 
 con.commit()
 con.close()
-```
 
 ### Количество записей
 
@@ -281,7 +281,6 @@ typeof(price),
 code,
 typeof(code)
 FROM products;
-```
 
 ### Количество записей
 
@@ -328,7 +327,6 @@ FROM products;
 
 ```python
 data = [(i, f"name_{i}") for i in range(100000)]
-```
 
 ### Вариант 1. Без общей транзакции
 
@@ -336,7 +334,6 @@ data = [(i, f"name_{i}") for i in range(100000)]
 
 ```python
 con.commit()
-```
 
 ### Вариант 2. С одной транзакцией
 
@@ -346,7 +343,6 @@ cur.executemany(
     data
 )
 con.commit()
-```
 
 ### Способ измерения времени
 
@@ -360,7 +356,6 @@ start = time.perf_counter()
 finish = time.perf_counter()
 
 elapsed = finish - start
-```
 
 ### Количество измерений
 
@@ -411,7 +406,6 @@ CREATE TABLE employees(
     department INTEGER,
     salary INTEGER
 );
-```
 
 ### Количество записей
 
@@ -428,7 +422,6 @@ cur.executemany(
     data
 )
 con.commit()
-```
 
 ### Измерение времени
 
@@ -465,7 +458,6 @@ con.commit()
 ```sql
 SELECT * FROM employees
 WHERE department = 50;
-```
 
 ### Способ измерения времени
 
@@ -479,7 +471,6 @@ WHERE department = 50
 cur.fetchall()
 
 finish = time.perf_counter()
-```
 
 ### Количество измерений
 
@@ -520,14 +511,12 @@ finish = time.perf_counter()
 ```sql
 CREATE INDEX idx_department
 ON employees(department);
-```
 
 ### Запрос
 
 ```sql
 SELECT * FROM employees
 WHERE department = 50;
-```
 
 ### Способ измерения времени
 
@@ -535,7 +524,6 @@ WHERE department = 50;
 
 ```python
 time.perf_counter()
-```
 
 аналогично шагу 5.
 
@@ -708,7 +696,7 @@ time.perf_counter()
 | «Сделайте выводы»             | Возможны слишком общие формулировки                   | Указаны три конкретных вывода, которые должны быть сформулированы студентом                          |
 
 После уточнения количества записей, числа измерений, способа измерения времени, набора программ и формы представления результатов лабораторная работа не содержит формулировок, допускающих неоднозначное толкование.
-
+```
 ---
 
 ## 3. Выявленные недостатки сгенерированного материала
@@ -745,6 +733,7 @@ time.perf_counter()
 
 **Итоговый вариант лабораторной работы:**
 
+``` markdown
 # Лабораторная работа
 
 ## Тема
@@ -834,7 +823,6 @@ CREATE TABLE products(
     price REAL,
     code TEXT
 );
-```
 
 2. формирует набор из пяти записей:
 
@@ -861,7 +849,6 @@ typeof(price),
 code,
 typeof(code)
 FROM products;
-```
 
 ### Количество записей
 
@@ -904,7 +891,6 @@ CREATE TABLE users(
     id INTEGER PRIMARY KEY,
     name TEXT
 );
-```
 
 ### Формирование данных
 
@@ -938,7 +924,6 @@ CREATE TABLE users(
 
 ```python
 time.perf_counter()
-```
 
 ### Количество измерений
 
@@ -992,7 +977,6 @@ CREATE TABLE employees(
     id INTEGER PRIMARY KEY,
     department INTEGER
 );
-```
 
 ### Формирование данных
 
@@ -1012,14 +996,12 @@ CREATE TABLE employees(
 SELECT *
 FROM employees
 WHERE department = 50;
-```
 
 ### Создание индекса
 
 ```sql
 CREATE INDEX idx_department
 ON employees(department);
-```
 
 ### Измерение времени
 
@@ -1030,7 +1012,6 @@ ON employees(department);
 
 ```python
 fetchall()
-```
 
 Создание таблицы, заполнение таблицы и создание индекса в измеряемый интервал не включаются.
 
@@ -1038,7 +1019,6 @@ fetchall()
 
 ```python
 time.perf_counter()
-```
 
 ### Количество измерений
 
@@ -1062,7 +1042,6 @@ time.perf_counter()
 
 ```sql
 PRAGMA index_list('employees');
-```
 
 ### Ожидаемый результат
 
@@ -1161,7 +1140,7 @@ PRAGMA index_list('employees');
 
   * результат выполнения запроса с использованием функции `typeof()`;
   * подтверждение существования индекса `idx_department`.
-
+```
 
 ---
 
