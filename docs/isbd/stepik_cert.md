@@ -6,3 +6,7 @@
 **Сертификат:**  
 
 ![Сертификат Stepik](../images/stepik_certificate.png)
+
+**Ссылка на сертификат, подтверждающая его подлинность:**
+
+![https://stepik.org/cert/3168548](https://stepik.org/cert/3168548)
