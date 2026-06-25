@@ -9,4 +9,4 @@
 
 **Ссылка на сертификат, подтверждающая его подлинность:**
 
-![https://stepik.org/cert/3168548](https://stepik.org/cert/3168548)
+[https://stepik.org/cert/3168548](https://stepik.org/cert/3168548)
