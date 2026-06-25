@@ -111,7 +111,7 @@ conn.close()
 ### Результат выполнения запроса с `typeof()`
 
 
-![](images/final_task_1.png)
+![](docs/images/final_task_1.png)
 
 Вывод в консоли:
 ```
