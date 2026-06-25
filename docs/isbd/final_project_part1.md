@@ -147,7 +147,7 @@
 
 Ниже приводится полный текст, полученный от языковой модели при первом запуске.
 
-``` markdown
+~~~ markdown
 # 1. Название лабораторной работы
 
 **Исследование особенностей SQLite: динамическая типизация, влияние транзакций на массовую вставку и влияние индексов на скорость поиска**
@@ -233,6 +233,7 @@ cur.executemany(
 
 con.commit()
 con.close()
+```
 
 ### Количество записей
 
@@ -280,6 +281,7 @@ typeof(price),
 code,
 typeof(code)
 FROM products;
+```
 
 ### Количество записей
 
@@ -326,6 +328,7 @@ FROM products;
 
 ```python
 data = [(i, f"name_{i}") for i in range(100000)]
+```
 
 ### Вариант 1. Без общей транзакции
 
@@ -333,6 +336,7 @@ data = [(i, f"name_{i}") for i in range(100000)]
 
 ```python
 con.commit()
+```
 
 ### Вариант 2. С одной транзакцией
 
@@ -342,6 +346,7 @@ cur.executemany(
     data
 )
 con.commit()
+```
 
 ### Способ измерения времени
 
@@ -355,6 +360,7 @@ start = time.perf_counter()
 finish = time.perf_counter()
 
 elapsed = finish - start
+```
 
 ### Количество измерений
 
@@ -405,6 +411,7 @@ CREATE TABLE employees(
     department INTEGER,
     salary INTEGER
 );
+```
 
 ### Количество записей
 
@@ -421,6 +428,7 @@ cur.executemany(
     data
 )
 con.commit()
+```
 
 ### Измерение времени
 
@@ -457,6 +465,7 @@ con.commit()
 ```sql
 SELECT * FROM employees
 WHERE department = 50;
+```
 
 ### Способ измерения времени
 
@@ -470,6 +479,7 @@ WHERE department = 50
 cur.fetchall()
 
 finish = time.perf_counter()
+```
 
 ### Количество измерений
 
@@ -510,12 +520,14 @@ finish = time.perf_counter()
 ```sql
 CREATE INDEX idx_department
 ON employees(department);
+```
 
 ### Запрос
 
 ```sql
 SELECT * FROM employees
 WHERE department = 50;
+```
 
 ### Способ измерения времени
 
@@ -523,6 +535,7 @@ WHERE department = 50;
 
 ```python
 time.perf_counter()
+```
 
 аналогично шагу 5.
 
@@ -695,7 +708,7 @@ time.perf_counter()
 | «Сделайте выводы»             | Возможны слишком общие формулировки                   | Указаны три конкретных вывода, которые должны быть сформулированы студентом                          |
 
 После уточнения количества записей, числа измерений, способа измерения времени, набора программ и формы представления результатов лабораторная работа не содержит формулировок, допускающих неоднозначное толкование.
-```
+~~~
 ---
 
 ## 3. Выявленные недостатки сгенерированного материала
