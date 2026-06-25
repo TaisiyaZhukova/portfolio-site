@@ -50,7 +50,7 @@ nav:
           - Паттерны проектирования: projects/design_patterns_lab.md
           - Шаблон "Одиночка": projects/singleton_pattern.md
           - Основные концепции ООП: projects/oop_concepts_python.md
-  - Информационные системы и БД:
+  - ИС и БД:
       - 1 семестр:
           - Задание 1. Создание простой БД: isbd/sem1_task1.md
           - Задание 2. Сохранение целостности: isbd/sem1_task2.md
