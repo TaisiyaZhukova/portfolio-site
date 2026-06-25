@@ -59,7 +59,6 @@ nav:
           - Задание 5. Проектирование БД (НФБК): isbd/sem1_task5.md
           - Задание 6. Нормализация БД: isbd/sem1_task6.md
       - 2 семестр:
-          - Лабораторная работа №6 (SQLite): isbd/sqlite_lab.md
           - Сертификаты Stepik: isbd/stepik_cert.md
           - Финальное задание:
               - Часть 1. Создание ЛР: isbd/final_project_part1.md
